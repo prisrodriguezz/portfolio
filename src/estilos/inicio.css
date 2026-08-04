@@ -1,0 +1,170 @@
+.inicio{
+    min-height:100%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* =========================
+   Editor
+========================= */
+
+.editor{
+    width: 900px;
+    max-width: 100%;
+    height: 460px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    overflow: hidden;
+
+    box-shadow: var(--shadow);
+}
+
+.editor-body{
+    flex: 1;
+    overflow-y: auto;
+}
+
+/* =========================
+   Header
+========================= */
+
+
+.editor-buttons span {
+  width: 12px;
+  height: 12px;
+
+  border-radius: 50%;
+}
+
+.red {
+  background: #ff5f57;
+}
+
+.yellow {
+  background: #febc2e;
+}
+
+.green {
+  background: #28c840;
+}
+
+.file-name {
+  font-size: 18px;
+
+  color: #d6d6d6;
+
+  font-weight: 500;
+}
+
+/* =========================
+   Código
+========================= */
+
+.codigo{
+
+    margin: 0;
+    padding: 20px 40px;
+
+    white-space: pre-wrap;
+    font-family: "Fira Code", monospace;
+    font-size: 1.05rem;
+    line-height: 1.5;
+}
+
+/* =========================
+   Colores estilo VS Code
+========================= */
+
+.keyword {
+
+  color: var(--accent);
+
+  font-weight: 600;
+}
+
+.variable {
+  color: var(--text-primary);
+}
+
+.property {
+
+  color: #569CD6;
+}
+
+.string {
+
+  color: #CE9178;
+}
+
+.boolean {
+
+  color: #4EC9B0;
+
+  font-weight: 600;
+}
+
+.operator {
+
+  color: var(--text-secondary);
+}
+
+/* =========================
+   Cursor
+========================= */
+
+.cursor {
+
+  display: inline-block;
+
+  width: 2px;
+
+  height: 1.2rem;
+
+  background: var(--accent);
+
+  margin-left: 2px;
+
+  vertical-align: middle;
+
+  animation: blink .8s infinite;
+}
+
+@keyframes blink {
+
+  50% {
+
+    opacity: 0;
+  }
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media(max-width:600px){
+    .inicio{
+        min-height:auto;
+        align-items:flex-start;
+    }
+
+    .editor{
+        width:100%;
+        height:380px;
+    }
+
+    .codigo{
+        padding:20px;
+        font-size:.85rem;
+    }
+
+    .file-name{
+        font-size:14px;
+    }
+}

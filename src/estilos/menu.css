@@ -1,0 +1,39 @@
+.menu {
+  position: absolute;
+  right: -35px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 75px;
+  padding: 18px 0;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  box-shadow: var(--shadow);
+}
+
+.menu a {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background: transparent;
+  transition: 0.25s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: var(--accent);
+}
+
+.menu a:hover {
+  background: white;
+  color: var(--accent-hover);
+}
+
+.menu a.activo {
+  background: var(--accent);
+  color: white;
+}

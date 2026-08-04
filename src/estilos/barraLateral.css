@@ -1,0 +1,131 @@
+.barra-lateral {
+  width: 340px;
+  padding: 40px 30px;
+  display: flex; /*contenedor flexible*/
+  flex-direction: column; /*acomoda en columnas*/
+  justify-content: space-between; /*reparte el espacio disponible entre los elementos*/
+  align-items: center; /*centra horizontalmente los elementos*/
+}
+
+.foto-perfil {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%; /*transforma un cuadrado en un circulo*/
+  overflow: hidden;
+  border: 5px solid white;
+  box-shadow: var(--shadow);
+}
+
+.foto-perfil img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.barra-lateral-contenido {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px; /*agrega espacio automaticamente entre los componentes (margin)*/
+}
+
+.barra-lateral-contenido h1 {
+  font-size: 30px;
+  text-align: center;
+  color: var(--text-primary);
+}
+
+.barra-lateral-contenido h2 {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+.redes {
+  display: flex;
+  margin-top: 10px;
+  gap: 20px;
+}
+
+.redes a {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--bg-card);
+  color: var(--accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.25s;
+}
+
+.redes a:hover {
+  transform: translateY(-3px);
+  background: var(--accent-hover);
+  color: white;
+}
+
+.boton-cv {
+  width: 100%;
+  margin-top: 10px;
+  padding: 15px;
+  border: none;
+  border-radius: 16px;
+  background: var(--accent);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.boton-cv:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
+footer{
+    color:var(--text-secondary);
+    font-size:14px;
+}
+
+@media(max-width:1099px){
+
+    .barra-lateral{
+        width:100%;
+        padding:35px;
+        border-radius:0 0 60px 60px;
+    }
+
+    footer{
+      margin-top: 5%;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .foto-perfil{
+        width:150px;
+        height:150px;
+    }
+
+    .barra-lateral-contenido h1{
+        font-size:26px;
+    }
+
+    .barra-lateral-contenido h2 {
+      line-height: 1.5;
+    }
+
+    .redes{
+        gap:15px;
+    }
+
+}
+

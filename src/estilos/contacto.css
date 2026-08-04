@@ -1,0 +1,316 @@
+.contacto {
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 25px;
+}
+
+.contacto-texto {
+  max-width: 750px;
+  text-align: center;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+/* =========================
+   Editor
+========================= */
+
+.contacto-form {
+  width: 900px;
+  max-width: 100%;
+
+  background: var(--bg-card);
+
+  border: 1px solid var(--border);
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  box-shadow: var(--shadow);
+}
+
+/* =========================
+   Header
+========================= */
+
+.editor-header {
+  height: 48px;
+
+  background: #2b2d31;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.editor-buttons {
+  position: absolute;
+
+  left: 18px;
+
+  display: flex;
+  gap: 8px;
+}
+
+.editor-buttons span {
+  width: 12px;
+  height: 12px;
+
+  border-radius: 50%;
+}
+
+.red {
+  background: #ff5f57;
+}
+
+.yellow {
+  background: #febc2e;
+}
+
+.green {
+  background: #28c840;
+}
+
+.file-name {
+  color: #d6d6d6;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+span{
+  font-size: 1.05rem;
+}
+
+/* =========================
+   Formulario
+========================= */
+
+.contacto-form form {
+  padding: 35px 40px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 18px;
+
+  font-family: "Fira Code", monospace;
+}
+
+/* Línea de código */
+
+.linea {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+}
+
+/* const */
+
+.keyword {
+  color: var(--accent);
+}
+
+/* contacto */
+
+.variable {
+  color: var(--text-primary);
+}
+
+/* nombre:, email:, etc */
+
+.campo label {
+  width: 90px;
+  flex-shrink: 0;
+  color: #ce9178;
+  font-size: 1.05rem;
+}
+
+/* Inputs */
+
+.contacto-form input,
+.contacto-form textarea {
+  flex: 1;
+  border: none;
+  border-bottom: 1px solid var(--border);
+  background: transparent;
+  padding: 8px 0;
+  font-family: "Fira Code", monospace;
+  font-size: 1.05rem;
+  color: var(--text-primary);
+  transition: 0.25s;
+}
+
+.contacto-form input::placeholder,
+.contacto-form textarea::placeholder {
+  color: var(--text-secondary);
+}
+
+.contacto-form input:focus,
+.contacto-form textarea:focus {
+  outline: none;
+  border-bottom: 1px solid var(--accent);
+}
+
+.mensaje {
+  align-items: flex-start;
+}
+
+.mensaje textarea {
+  resize: none;
+  min-height: 70px;
+}
+
+/* Comas */
+
+.linea > span:last-child {
+  color: #7d7d7d;
+}
+
+/* Botón */
+.contacto-form button {
+  align-self: flex-end;
+  margin-top: 10px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  background: var(--accent);
+  color: white;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.contacto-form button:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
+.comentario {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+
+  font-family: "Fira Code", monospace;
+
+  color: #6a9955;
+  /* o usar un verde de tu paleta si preferís */
+}
+
+.comentario span {
+  line-height: 1.6;
+}
+
+/* =========================
+   Mensaje de éxito
+========================= */
+
+.mensaje-exito {
+  padding: 35px 40px;
+
+  min-height: 280px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  font-family: "Fira Code", monospace;
+}
+
+/* Líneas del "código" */
+
+.mensaje-exito .linea {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  font-size: 1.05rem;
+}
+
+/* Sangría */
+
+.mensaje-exito .indentado {
+  padding-left: 35px;
+}
+
+/* Propiedades */
+
+.propiedad {
+  color: #ce9178;
+}
+
+/* Texto */
+
+.string {
+  color: #6a9955;
+}
+
+/* Botón */
+
+.mensaje-exito button {
+  align-self: flex-end;
+
+  margin-top: 25px;
+
+  padding: 12px 24px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: var(--accent);
+
+  color: white;
+
+  font-size: 1.05rem;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.25s;
+}
+
+.mensaje-exito button:hover {
+  background: var(--accent-hover);
+
+  transform: translateY(-2px);
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 768px) {
+  .contacto {
+    justify-content: flex-start;
+  }
+  .contacto-form {
+    width: 100%;
+  }
+  .contacto-form form {
+    padding: 25px;
+  }
+  .linea {
+    flex-wrap: wrap;
+  }
+  .campo label {
+    width: 100%;
+  }
+  .contacto-form button {
+    width: 100%;
+  }
+}

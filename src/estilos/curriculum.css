@@ -1,0 +1,277 @@
+.curriculum{
+    display:flex;
+    flex-direction:column;
+    gap:50px;
+}
+
+.curriculum-grid{
+    display:grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap:70px;
+}
+
+.curriculum h1,
+.curriculum h2{
+    position:relative;
+    color:var(--text-primary);
+}
+
+.curriculum h1{
+    font-size: 42px;
+}
+
+.curriculum h2{
+    font-size: 28px;
+    padding-bottom: 15px;
+    margin-bottom: -9px;
+    border-bottom:2px solid var(--border);
+}
+
+.curriculum h1::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-10px;
+    width:60px;
+    height:3px;
+    background:var(--accent);
+}
+
+
+.formacion-lista{
+    margin-top:30px;
+    display:flex;
+    flex-direction:column;
+    gap:35px;
+}
+
+.formacion-item{
+    position:relative;
+    padding-left:25px;
+    border-left:3px solid var(--bg-secondary);
+}
+
+.marca{
+    position:absolute;
+    left:-8px;
+    top:10px;
+    width:14px;
+    height:14px;
+    background:var(--accent);
+    border-radius:50%;
+}
+
+.formacion-item h3{
+    margin:0 0 12px;
+    font-size:18px;
+    font-weight:700;
+    color:var(--text-primary);
+}
+
+.formacion-item .fecha{
+    margin:0;
+    font-size:15px;
+    font-weight:600;
+    color:var(--accent);
+}
+
+.formacion-item .institucion{
+    margin-top:6px;
+    color:var(--text-secondary);
+    font-size:15px;
+}
+
+.certificaciones{
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.certificaciones-lista{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.certificacion-card{
+    padding:22px 24px;
+    border:1px solid #c2bfbfbd;
+    border-radius:18px;
+    background: var(--bg-card);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    transition:.25s;
+    justify-content: space-between;
+    padding: 22px 70px 22px 24px;
+}
+
+.certificacion-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 22px rgba(0,0,0,.08);
+}
+
+.certificacion-card h3{
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    columns: var(--text-primary);
+}
+
+.certificacion-card .fecha{
+    margin-top: 8px;
+    font-size: .95rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.certificacion-card .descripcion{
+    margin-top: 14px;
+    font-size: .98rem;
+    line-height: 1.6;
+    color: var(--text-primary);
+}
+
+.btn-pdf{
+    position: absolute;
+    right: 18px;
+    bottom: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    opacity: .6;
+    transition: .25s;
+}
+
+.btn-pdf svg{
+    font-size:28px;
+    color:var(--accent);
+}
+
+.btn-pdf:hover{
+    transform:scale(1.15) rotate(-8deg);
+}
+
+.certificacion-card:hover .btn-pdf{
+    opacity:1;
+    transform:scale(1.08);
+}
+
+.stack{
+    display:flex;
+    flex-direction:column;
+    gap:32px;
+}
+
+.categoria{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.categoria h3{
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color:var(--text-primary);
+}
+
+.chips{
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;
+}
+
+.chips span{
+    padding:8px 15px;
+    border-radius:999px;
+    background:var(--bg-secondary);
+    border:1px solid rgba(108,126,248,.25);
+    color:var(--accent);
+    font-size:.9rem;
+    font-weight:500;
+    transition:.25s;
+}
+
+.chips span:hover{
+    background:var(--accent);
+    color:white;
+    transform:translateY(-2px);
+}
+
+.icono-titulo{
+    margin-right:10px;
+    color:var(--accent);
+    vertical-align:middle;
+    font-size:28px;
+}
+
+.competencias{
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.competencias-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px 35px;
+}
+
+.competencia{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.competencia svg{
+    font-size: 20px;
+    color: var(--accent);
+    flex-shrink: 0;
+}
+
+.competencia span{
+    font-size: 16px;
+    color: var(--text-primary);
+    line-height: 1.4;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media(max-width:768px){
+    .curriculum-grid{
+        grid-template-columns:1fr;
+        gap:45px;
+    }
+
+    .competencias-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:600px){
+    .curriculum h1{
+        font-size:32px;
+    }
+
+    .curriculum h2{
+        font-size:24px;
+    }
+
+    .certificacion-card{
+        padding:20px 55px 20px 20px;
+        min-height:200px;
+        height:auto;
+    }
+
+    .btn-pdf svg{
+        font-size:24px;
+    }
+}

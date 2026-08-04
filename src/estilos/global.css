@@ -1,0 +1,186 @@
+:root{
+    /* Fondos */
+    --bg-primary: #FAF8FA;
+    --bg-secondary: #DED8E5;
+    --bg-card: #FFFFFF;
+
+    /* Textos */
+    --text-primary: #2C252E;
+    --text-secondary: #563557;
+
+    /* Color principal */
+    --accent: #AF70CF;
+
+    /* Estados */
+    --accent-hover: #9B5FBA;
+    --accent-light: #F3E7F8;
+
+    /* Bordes */
+    --border: #D6CFDD;
+
+    /* Sombras */
+    --shadow: 0 10px 30px rgba(44, 37, 46, 0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:"Plus Jakarta Sans", sans-serif;
+    background:var(--bg-primary);
+
+    /*background:
+        radial-gradient(
+            circle at top left,
+            #FAF8FA 0%,
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at bottom right,
+            #FAF8FA 0%,
+            transparent 40%
+        ),
+        #ca95df;*/
+
+    color:var(--text-primary);
+
+    display: flex;
+    justify-content: center; /*centra horizontalmente*/
+    align-items: center; /*centra verticalmente*/
+    min-height: 100vh; /*ocupa toda la altura de la ventana*/
+}
+
+.contenedor-principal{
+    width: 1400px; /*ancho de la tarjeta*/
+    height: 90vh; /*ocupa casi toda la pantalla*/
+    display: flex; /*los componentes se acomodan uno al lado del otro*/
+    position: relative;
+    align-items: center;
+
+    z-index: 1;
+}
+
+.barra-lateral{
+    width: 340px;
+    background: var(--bg-secondary);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+.contenido{
+    flex: 1; /*ocupa el espacio que queda libre*/
+    background: var(--bg-card);
+    overflow-y: auto;
+    padding: 50px;
+}
+
+.menu{
+    width: 90px;
+    background: var(--bg-secondary);
+}
+
+.portfolio{
+    display:flex;
+    width:1320px;
+    height:100%;
+    background: var(--bg-card);
+    border-radius:28px;
+    overflow:hidden;
+    box-shadow: var(--shadow);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:1366px){
+    body{
+        display:block;
+        padding:20px 0;
+    }
+    .contenedor-principal{
+        width:100%;
+        height:auto;
+        display:block;
+    }
+    .portfolio{
+        width:95%;
+        height:auto;
+        margin:auto;
+        flex-direction:column;
+    }
+    .barra-lateral{
+        width:100%;
+        padding:35px;
+        /*
+          Mantiene la estética:
+          la curva pasa a la parte inferior
+        */
+        border-radius:
+        0 0 60px 60px;
+    }
+    .contenido{
+        width:100%;
+        padding:35px;
+        overflow:visible;
+        padding-bottom:120px;
+    }
+
+    /*
+       Menú flotante inferior
+    */
+    .menu{
+        position: fixed !important;
+        left:50% !important;
+        bottom:20px !important;
+        top:auto !important;
+        transform:translateX(-50%) !important;
+        width:max-content;
+        height:auto;
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        justify-content:center;
+        gap:15px;
+        padding:12px 25px;
+        border-radius:40px;
+        z-index:9999;
+    }
+}
+
+
+/* ==================================================
+   Celulares pequeños
+   320px - 600px
+================================================== */
+
+@media(max-width:600px){
+    body{
+        padding:0;
+    }
+    .portfolio{
+        width:100%;
+        border-radius:0;
+    }
+    .barra-lateral{
+        padding:25px;
+        border-radius: 0 0 40px 40px;
+    }
+    .contenido{
+        padding:25px;
+        padding-bottom: 120px;
+    }
+    .menu{
+        bottom:15px;
+        gap:12px;
+        padding:12px 20px;
+    }
+}
