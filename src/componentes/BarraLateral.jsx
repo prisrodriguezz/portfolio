@@ -23,7 +23,7 @@ function BarraLateral() {
                     <a href="mailto:rodriguezpris10@gmail.com" target="_blank" rel="noreferrer"><FaEnvelope /></a>
                 </div>
 
-                <button className="boton-cv">Descargar CV</button>
+                <button className="boton-cv" onClick={() => window.open("/cv-priscila-rodriguez.pdf", "_blank")}>Descargar CV</button>
             </div>
 
             <footer>© 2026 Priscila Rodríguez</footer>
