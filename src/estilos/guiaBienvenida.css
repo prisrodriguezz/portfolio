@@ -109,7 +109,7 @@
   /* Mostramos flecha abajo */
   .flecha-mobile {
     display: block;
-    left: 50%;
+    left: 47%;
     bottom: -40px;
     transform: translateX(-50%);
   }
