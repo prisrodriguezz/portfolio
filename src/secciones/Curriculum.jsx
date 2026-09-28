@@ -69,15 +69,43 @@ function Curriculum() {
                 <h3>QA Automatizado - XAcademy</h3>
 
                 <p className="fecha">
-                  Julio 2026 · Technology with Purpose Foundation
+                  2026 · Technology with Purpose Foundation
                 </p>
 
                 <p className="descripcion">
                   Fundamentos de testing y automatización de pruebas.
                 </p>
 
-                <a href="/certificaciones/xacademy_certificado_qa_automatizado.pdf" target="_blank" rel="noopener noreferrer"
-                  className="btn-pdf" title="Ver certificado">
+                <a
+                  href="/certificaciones/xacademy_certificado_qa_automatizado.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-pdf"
+                  title="Ver certificado"
+                >
+                  <FaRegFilePdf />
+                </a>
+              </article>
+
+              <article className="certificacion-card">
+                <h3>QA Manual - XAcademy</h3>
+
+                <p className="fecha">
+                  2026 · Technology with Purpose Foundation
+                </p>
+
+                <p className="descripcion">
+                  Diseño y ejecución de casos de prueba,
+                  reporte de defectos y pruebas funcionales.
+                </p>
+
+                <a
+                  href="/certificaciones/xacademy_certificado_qa_manual.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-pdf"
+                  title="Ver certificado"
+                >
                   <FaRegFilePdf />
                 </a>
               </article>
@@ -85,14 +113,19 @@ function Curriculum() {
               <article className="certificacion-card">
                 <h3>Web Designer - HTML & CSS</h3>
 
-                <p className="fecha">Mayo 2025 · Folcademy</p>
+                <p className="fecha">2025 · Folcademy</p>
 
                 <p className="descripcion">
                   HTML, CSS, Git, Bootstrap y desarrollo de interfaces web.
                 </p>
 
-                <a href="/certificaciones/folcademy_certificado_web_designer.pdf" target="_blank" rel="noopener noreferrer"
-                  className="btn-pdf" title="Ver certificado">
+                <a
+                  href="/certificaciones/folcademy_certificado_web_designer.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-pdf"
+                  title="Ver certificado"
+                >
                   <FaRegFilePdf />
                 </a>
               </article>

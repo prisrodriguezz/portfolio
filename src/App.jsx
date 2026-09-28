@@ -1,6 +1,8 @@
 import BarraLateral from "./componentes/BarraLateral";
 import Menu from "./componentes/Menu";
 
+import ScrollToTop from "./componentes/ScrollToTop";
+
 import { Routes, Route } from "react-router-dom";
 
 import { useState } from "react";
@@ -25,6 +27,9 @@ function App() {
 
   return (
     <div className="contenedor-principal">
+
+      <ScrollToTop />
+      
       <div className="portfolio">
         <BarraLateral />
 

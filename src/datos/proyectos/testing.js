@@ -2,6 +2,25 @@ const testing = [
   {
     id: 1,
 
+    titulo: "Testing de Plataforma Web",
+
+    descripcion:
+      "Etapa de inmersión práctica de QA Manual realizada en XAcademy 2026. Incluye pruebas funcionales y de usabilidad sobre la plataforma GrowthMind AI, documentación de casos de prueba y reporte de defectos.",
+
+    tipo: ["QA Manual", "Trabajo en equipo", "Académico"],
+
+    herramientas: [
+      "Trello",
+      "Documentación de casos de prueba"
+    ],
+
+    imagenPortada: "/proyectos/growthmindarg.png",
+
+    documentacion: "/proyectos/EtapaInmersiva-QAManual.pdf"
+  },
+  {
+    id: 2,
+
     titulo: "Testing de sitio e-commerce",
 
     descripcion:
@@ -19,7 +38,7 @@ const testing = [
     imagenPortada: "/proyectos/ShadyMeadows.png",
 
     documentacion: "/proyectos/ChallengeQA-Automation.pdf"
-  }
+  },
 ];
 
 export default testing;

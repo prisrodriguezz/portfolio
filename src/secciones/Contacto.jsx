@@ -17,7 +17,7 @@ function Contacto() {
               <span className="green"></span>
             </div>
 
-            <span className="file-name">contacto.js</span>
+            <span className="file-name">contacto.jsx</span>
           </div>
 
           <div className="mensaje-exito">
@@ -64,7 +64,7 @@ function Contacto() {
             <span className="green"></span>
           </div>
 
-          <span className="file-name">contacto.js</span>
+          <span className="file-name">contacto.jsx</span>
         </div>
 
         <form onSubmit={handleSubmit}>
