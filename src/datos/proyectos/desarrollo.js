@@ -30,7 +30,7 @@ const desarrollo = [
   {
     id: 2,
 
-    titulo: "GymMaster",
+    titulo: "GymMaster - Sistema de escritorio",
 
     descripcion:
       "Sistema de escritorio para administrar clientes, profesores, membresías, pagos y entrenamientos de un gimnasio.",

@@ -1,19 +1,24 @@
 import "../estilos/curriculum.css";
+
 import {
   FaGraduationCap,
   FaCode,
   FaPuzzlePiece,
-  FaHandshake,
   FaBookOpen,
   FaBullseye,
   FaComments,
   FaCertificate,
   FaRegFilePdf,
   FaBrain,
+  FaHandshake,
+  FaDesktop,
+  FaServer,
+  FaDatabase,
+  FaVial,
+  FaToolbox,
 } from "react-icons/fa6";
 
 import AnimatedSection from "../componentes/AnimatedSection";
-
 import { MdOutlineManageSearch } from "react-icons/md";
 
 function Curriculum() {
@@ -22,6 +27,7 @@ function Curriculum() {
       <h1>Currículum</h1>
 
       <div className="curriculum-grid">
+        {/*Columna izquierda */}
         <div>
           <section className="formacion">
             <h2>
@@ -59,6 +65,78 @@ function Curriculum() {
             </div>
           </section>
 
+          <section className="stack">
+            <h2>
+              <FaCode className="icono-titulo" /> Stack tecnológico
+            </h2>
+
+            <div className="lista-categorias">
+              <div className="categoria">
+                <h3>
+                  <FaDesktop className="icono-categoria" /> Frontend
+                </h3>
+                <div className="tech-chips">
+                  <span className="tech-chip">HTML</span>
+                  <span className="tech-chip">CSS</span>
+                  <span className="tech-chip">JavaScript</span>
+                  <span className="tech-chip">React</span>
+                  <span className="tech-chip">Bootstrap</span>
+                </div>
+              </div>
+
+              <div className="categoria">
+                <h3>
+                  <FaServer className="icono-categoria" /> Backend
+                </h3>
+                <div className="tech-chips">
+                  <span className="tech-chip">C#</span>
+                  <span className="tech-chip">ASP.NET Core</span>
+                  <span className="tech-chip">PHP</span>
+                  <span className="tech-chip">CodeIgniter 4</span>
+                </div>
+              </div>
+
+              <div className="categoria">
+                <h3>
+                  <FaDatabase className="icono-categoria" /> Bases de datos
+                </h3>
+                <div className="tech-chips">
+                  <span className="tech-chip">SQL Server</span>
+                  <span className="tech-chip">MySQL</span>
+                </div>
+              </div>
+
+              <div className="categoria">
+                <h3>
+                  <FaVial className="icono-categoria" /> QA & Testing
+                </h3>
+                <div className="tech-chips">
+                  <span className="tech-chip">Testing Manual</span>
+                  <span className="tech-chip">Testing Funcional</span>
+                  <span className="tech-chip">Casos de Prueba</span>
+                  <span className="tech-chip">Cypress</span>
+                </div>
+              </div>
+
+              <div className="categoria">
+                <h3>
+                  <FaToolbox className="icono-categoria" /> Herramientas
+                </h3>
+                <div className="tech-chips">
+                  <span className="tech-chip">Git</span>
+                  <span className="tech-chip">GitHub</span>
+                  <span className="tech-chip">VS Code</span>
+                  <span className="tech-chip">Visual Studio</span>
+                  <span className="tech-chip">Postman</span>
+                  <span className="tech-chip">Trello</span>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        {/*Columna derecha */}
+        <div>
           <section className="certificaciones">
             <h2>
               <FaCertificate className="icono-titulo" /> Certificaciones
@@ -73,7 +151,7 @@ function Curriculum() {
                 </p>
 
                 <p className="descripcion">
-                  Fundamentos de testing y automatización de pruebas.
+                  Curso teórico-práctico. Fundamentos de testing y automatización de pruebas mediante trabajo final colaborativo en equipo.
                 </p>
 
                 <a
@@ -95,8 +173,7 @@ function Curriculum() {
                 </p>
 
                 <p className="descripcion">
-                  Diseño y ejecución de casos de prueba,
-                  reporte de defectos y pruebas funcionales.
+                  Curso teórico-práctico. Diseño y ejecución de casos de prueba, reporte de defectos y pruebas funcionales. Incluyó etapa final inmersiva grupal.
                 </p>
 
                 <a
@@ -116,7 +193,7 @@ function Curriculum() {
                 <p className="fecha">2025 · Folcademy</p>
 
                 <p className="descripcion">
-                  HTML, CSS, Git, Bootstrap y desarrollo de interfaces web.
+                  Desarrollo de interfaces web con HTML, CSS y Bootstrap. Proyecto final enfocado en la creación de un portfolio propio.
                 </p>
 
                 <a
@@ -129,70 +206,6 @@ function Curriculum() {
                   <FaRegFilePdf />
                 </a>
               </article>
-            </div>
-          </section>
-        </div>
-
-        <div>
-          <section className="stack">
-            <h2>
-              <FaCode className="icono-titulo" /> Tecnologías y herramientas
-            </h2>
-
-            <div className="categoria">
-              <h3>Frontend</h3>
-
-              <div className="chips">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>React</span>
-                <span>Bootstrap</span>
-              </div>
-            </div>
-
-            <div className="categoria">
-              <h3>Backend</h3>
-
-              <div className="chips">
-                <span>C#</span>
-                <span>ASP.NET Core</span>
-                <span>PHP</span>
-                <span>CodeIgniter 4</span>
-              </div>
-            </div>
-
-            <div className="categoria">
-              <h3>Bases de datos</h3>
-
-              <div className="chips">
-                <span>SQL Server</span>
-                <span>MySQL</span>
-              </div>
-            </div>
-
-            <div className="categoria">
-              <h3>QA & Testing</h3>
-
-              <div className="chips">
-                <span>Testing Manual</span>
-                <span>Testing Funcional</span>
-                <span>Casos de Prueba</span>
-                <span>Cypress</span>
-              </div>
-            </div>
-
-            <div className="categoria">
-              <h3>Herramientas</h3>
-
-              <div className="chips">
-                <span>Git</span>
-                <span>GitHub</span>
-                <span>VS Code</span>
-                <span>Visual Studio</span>
-                <span>Postman</span>
-                <span>Trello</span>
-              </div>
             </div>
           </section>
 

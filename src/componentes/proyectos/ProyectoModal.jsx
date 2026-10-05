@@ -27,15 +27,39 @@ function ProyectoModal({ proyecto, cerrar }) {
           ✕
         </button>
 
-        <h2>{proyecto.titulo}</h2>
+        <div className="modal-header">
+          <h2>{proyecto.titulo}</h2>
+        </div>
 
         {proyecto.imagenes ? (
-          <div className="galeria">
-            <button onClick={anteriorImagen}>◀</button>
+          <div className="galeria-container">
+            <div className="imagen-wrapper">
+              <img
+                src={proyecto.imagenes[imagenActual]}
+                alt={`${proyecto.titulo} - ${imagenActual + 1}`}
+              />
+            </div>
 
-            <img src={proyecto.imagenes[imagenActual]} alt={proyecto.titulo} />
+            {/* Controles de navegación limpios debajo de la imagen */}
+            <div className="galeria-controles">
+              <button className="btn-control" onClick={anteriorImagen}>
+                ◀ Anterior
+              </button>
 
-            <button onClick={siguienteImagen}>▶</button>
+              <div className="indicadores">
+                {proyecto.imagenes.map((_, index) => (
+                  <span
+                    key={index}
+                    className={index === imagenActual ? "activo" : ""}
+                    onClick={() => setImagenActual(index)}
+                  />
+                ))}
+              </div>
+
+              <button className="btn-control" onClick={siguienteImagen}>
+                Siguiente ▶
+              </button>
+            </div>
           </div>
         ) : (
           <iframe
@@ -43,17 +67,6 @@ function ProyectoModal({ proyecto, cerrar }) {
             title={proyecto.titulo}
             className="pdf-viewer"
           />
-        )}
-
-        {proyecto.imagenes && (
-          <div className="indicadores">
-            {proyecto.imagenes.map((_, index) => (
-              <span
-                key={index}
-                className={index === imagenActual ? "activo" : ""}
-              />
-            ))}
-          </div>
         )}
       </div>
     </div>
