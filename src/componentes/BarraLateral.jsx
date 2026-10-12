@@ -15,7 +15,7 @@ function BarraLateral() {
                     <img src="/foto-perfil.jpeg" alt="Foto de Priscila Rodríguez" />
                 </div>
                 <h1>Priscila Rodríguez</h1>
-                <h2>Analista Programadora Universitaria</h2>
+                <h2>Analista Programadora | QA Testing | .NET & React</h2>
 
                 <div className="redes">
                     <a href="https://github.com/prisrodriguezz" target="_blank" rel="noreferrer"><FaGithub /></a>

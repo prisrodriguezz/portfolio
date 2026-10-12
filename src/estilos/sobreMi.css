@@ -81,8 +81,8 @@
 }
 
 .columnas p{
-    font-size:16px;
-    line-height:1.4;
+    font-size:17px;
+    line-height:1.5;
     color:var(--text-secondary);
     text-align:justify;
     border-top:2px solid var(--border);
@@ -114,7 +114,7 @@
 
 .complementario p{
     font-size:17px;
-    line-height:1.9;
+    line-height:1.5;
     color:var(--text-secondary);
     text-align:justify;
     margin-bottom:18px;
