@@ -13,7 +13,6 @@ import {
   FaHandshake,
   FaDesktop,
   FaServer,
-  FaDatabase,
   FaVial,
   FaToolbox,
 } from "react-icons/fa6";
@@ -76,31 +75,23 @@ function Curriculum() {
                   <FaDesktop className="icono-categoria" /> Frontend
                 </h3>
                 <div className="tech-chips">
-                  <span className="tech-chip">HTML</span>
-                  <span className="tech-chip">CSS</span>
+                  <span className="tech-chip">HTML5</span>
+                  <span className="tech-chip">CSS3</span>
                   <span className="tech-chip">JavaScript</span>
+                  <span className="tech-chip">TypeScript</span>
                   <span className="tech-chip">React</span>
-                  <span className="tech-chip">Bootstrap</span>
                 </div>
               </div>
 
               <div className="categoria">
                 <h3>
-                  <FaServer className="icono-categoria" /> Backend
+                  <FaServer className="icono-categoria" /> Backend & Bases de datos
                 </h3>
                 <div className="tech-chips">
                   <span className="tech-chip">C#</span>
                   <span className="tech-chip">ASP.NET Core</span>
-                  <span className="tech-chip">PHP</span>
-                  <span className="tech-chip">CodeIgniter 4</span>
-                </div>
-              </div>
-
-              <div className="categoria">
-                <h3>
-                  <FaDatabase className="icono-categoria" /> Bases de datos
-                </h3>
-                <div className="tech-chips">
+                  <span className="tech-chip">Entity Framework Core</span>
+                  <span className="tech-chip">API REST</span>
                   <span className="tech-chip">SQL Server</span>
                   <span className="tech-chip">MySQL</span>
                 </div>
@@ -113,8 +104,10 @@ function Curriculum() {
                 <div className="tech-chips">
                   <span className="tech-chip">Testing Manual</span>
                   <span className="tech-chip">Testing Funcional</span>
-                  <span className="tech-chip">Casos de Prueba</span>
+                  <span className="tech-chip">Diseño de Casos de Prueba</span>
+                  <span className="tech-chip">Reporte de bugs</span>
                   <span className="tech-chip">Cypress</span>
+                  <span className="tech-chip">Postman</span>
                 </div>
               </div>
 
@@ -127,7 +120,6 @@ function Curriculum() {
                   <span className="tech-chip">GitHub</span>
                   <span className="tech-chip">VS Code</span>
                   <span className="tech-chip">Visual Studio</span>
-                  <span className="tech-chip">Postman</span>
                   <span className="tech-chip">Trello</span>
                 </div>
               </div>

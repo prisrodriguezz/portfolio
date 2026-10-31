@@ -19,7 +19,7 @@ function BarraLateral() {
 
                 <div className="redes">
                     <a href="https://github.com/prisrodriguezz" target="_blank" rel="noreferrer"><FaGithub /></a>
-                    <a href="https://www.linkedin.com/in/priscila-rodríguez-baa8bb416?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer"><FaLinkedinIn /></a>
+                    <a href="https://www.linkedin.com/in/priscila-rodriguez-dev" target="_blank" rel="noreferrer"><FaLinkedinIn /></a>
                     <a href="mailto:rodriguezpris10@gmail.com" target="_blank" rel="noreferrer"><FaEnvelope /></a>
                 </div>
 

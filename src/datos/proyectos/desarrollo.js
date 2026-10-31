@@ -19,9 +19,7 @@ const desarrollo = [
     imagenPortada: "/proyectos/AuraEstetica/Principal.png",
 
     imagenes: [
-      "/proyectos/gymmaster.png",
-      "/proyectos/gymmaster.png",
-      "/proyectos/gymmaster.png"
+      "/proyectos/PortadaenDesarrollo.jpg",
     ],
 
     github: "https://github.com/prisrodriguezz/turnos-app.git"
